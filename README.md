@@ -8,7 +8,6 @@ PenBox is a docker container, designed to help you to realize penetration testin
 1. [Commands](#commands)
 1. [Available tools](#available-tools)
 1. [How to ?](#how-to)
-1. [Licence](#licence)
 
 # Dependencies
 
@@ -79,7 +78,3 @@ You want some features which are not provide straightly by PenBox, you can modif
 ## How to add dictionaries in the PenBox image
 
 If you need to add some useful files like dictionaries for fuzzing or brute force you can add in the docker file `ADD opt/* /opt/.` and create a repository `opt` and put every file you need.
-
-# Licence
-
-BSD Licence
