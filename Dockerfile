@@ -136,5 +136,5 @@ RUN echo "\e[1;34mTHE HARVESTER\e[0;39m" \
 
 WORKDIR /home/$USERNAME
 
-RUN echo "PS1='\e[1;90m[\e[1;91m$?\e[1;90m]-\e[1;92m\u\e[1;90m@\e[1;92m\h\e[1;90m:\e[1;94m\w\e[1;95m\\$\e[0;39m '" >> /home/$USERNAME/.bashrc
-RUN echo "PS1='\e[1;90m[\e[1;91m$?\e[1;90m]-\e[1;92m\u\e[1;90m@\e[1;92m\h\e[1;90m:\e[1;94m\w\e[1;95m\\$\e[0;39m '" >> /root/.bashrc
+RUN echo "PS1='\[\e[1;90m\][\[\e[1;91m\]$?\[\e[1;90m\]]-\[\e[1;92m\]\u\[\e[1;90m\]@\[\e[1;92m\]\h\[\e[1;90m\]:\[\e[1;94m\]\w\[\e[1;95m\]\\$\[\e[0;39m\] '" >> /home/$USERNAME/.bashrc
+RUN echo "PS1='\[\e[1;90m\][\[\e[1;91m\]$?\[\e[1;90m\]]-\[\e[1;92m\]\u\[\e[1;90m\]@\[\e[1;92m\]\h\[\e[1;90m\]:\[\e[1;94m\]\w\[\e[1;95m\]\\$\[\e[0;39m\] '" >> /root/.bashrc
