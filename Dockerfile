@@ -32,6 +32,7 @@ RUN apt-get update && apt-get install -qqy \
       cpanminus \
       procps \
       tcpdump \
+      ftp \
       zlib1g-dev
 
 RUN useradd -m $USERNAME && \
