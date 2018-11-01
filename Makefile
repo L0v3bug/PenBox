@@ -53,3 +53,10 @@ reset: rm create start ## Reset your PenBox container
 
 attach: xauth ## Get the CLI of PenBox
 	@docker exec -it $(CONTAINER_DB) bash
+
+copy: ## Copy the PenBox user home in your host. You can specify the destination by setting the `DEST` variable.
+	@if [ -z "$(DEST)" ]; then \
+		docker cp $(CONTAINER_DB):/home/$(USER)/ $(IMAGE_DB)_$(USER); \
+	else \
+		docker cp $(CONTAINER_DB):/home/$(USER)/ $(DEST)/$(IMAGE_DB)_$(USER); \
+	fi
